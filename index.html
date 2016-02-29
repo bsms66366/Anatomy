@@ -1,103 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <!--
-  * Copyright © 2012-2015, Intel Corporation. All rights reserved.
-  * Please see the included README.md file for license terms and conditions.
-  -->
+<head>
+<meta charset="UTF-8">
+<title>Anatomy Interface</title>
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!--<meta name="viewport" content="width=device-width">-->
+ <link   href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!--<link rel="apple-touch-startup-image"
+      href="./anatomyMenu6.html" />-->
+   <script>
+       $(window).load(function(){
+    $('meta[name=viewport]').attr('content','width=800, maximum-scale=1')
+  }); </script>
+ <script> javascript:if(!document.webkitFullscreenElement){document.getElementsByTagName('html')[0].webkitRequestFullscreen();} else{document.webkitExitFullscreen()};</script>
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/af.ui.min.css">
-        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
-        <title>Blank App Designer Packaged Web App Project Template</title>
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<body>
+<div style="background-image: url('images/background.png'); height: 1000px; overflow-x: hidden;" id="banner">
+<div style="width: 800%; max-width: 1000px; min-width: 900px; margin: auto; color: white; text-align: center; position: relative; padding-top: 10px;">
+<div style="width: 10%;"></div>
 
-        <!--
-  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
-  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
-  * For a quick overview of "meta viewport" and @viewport, see this article:
-  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
-  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
-  * Additional useful references include:
-  *   http://www.quirksmode.org/mobile/viewports.html
-  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
-  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
--->
+<!--Modules-->
+<div id="timetableDIV" style="float: left; width: 15%; border-right: 1px dotted #ccc; margin-left:10px; padding-left: 10px; padding-right: 20px; padding-top: 10px; position: relative; height: 200px;" ><a href="#" target="_blank" id="timetablelink1" class="timetable"><img id="timetableimageid" alt="" src="images/moduleLogo2[w].svg" title="Access your timetable" width="69" height="69" /> </a>
+<div style="position: absolute; top: 80px; padding-right: 10px;">
+<h3 style="color: #bbba41; font-size: 1.3em; font-weight: 400; font-family: arial; text-align: left;"><a href="#" style="text-decoration: none; color: #bbba41;" target="_blank" title="Access your timetable" id="timetablelink2" class="timetable">Modules</a></h3>
+<p id="timetablep" style="text-align: left;"><a href="#" style="text-decoration: none; color: #fff; font-family: arial;" target="_blank" title="Access your timetable" id="timetablelink3" class="timetable;">Select your course and modules to view your content.</a></p>
 
-        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
-        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+<!--dropdown-->
+<div id="dropdown1" style="margin-top: 2cm;"></div>
+<!--module 102-->
+<ul id="links1">
+<li style="list-style-type: none;"><div id="MOD102DIV"><a target="_blank" href="https://studentcentral.brighton.ac.uk/webapps/blackboard/execute/modulepage/view?course_id=_101701_1&cmp_tab_id=_255677_1&editMode=true&mode=cpview" id="modulelinktop102" class="module"><img id="module102imageid" alt="Module 102" src="images/moduleLink102[white2A].svg" title="module102" width="400" height="400"/> </a></li
+<!--module 103-->
+<li style="list-style-type: none;"><div id="MOD103DIV"><a target="_blank" href="https://studentcentral.brighton.ac.uk/webapps/blackboard/execute/modulepage/view?course_id=_101702_1&cmp_tab_id=_255679_1&editMode=true&mode=cpview" id="modulelinktop103" class="module"><img id="module103imageid" alt="Module 103" src="images/moduleLink103[white2].svg" title="module103" width="400" height="400" /> </a></li>
+<!--module 104-->
+<li style="list-style-type: none;"><div id="MOD104DIV"><a target="_blank" href="https://studentcentral.brighton.ac.uk/webapps/blackboard/execute/modulepage/view?course_id=_101703_1&cmp_tab_id=_255681_1&editMode=true&mode=cpview" id="modulelinktop104" class="module"><img id="module104imageid" alt="Module 104" src="images/moduleLink104[white2].svg" title="module104" width="400" height="400" /> </a></li>
+<!--module 202-->
+<li style="list-style-type: none;"><div id="MOD202DIV"><a target="_blank" href="https://studentcentral.brighton.ac.uk/webapps/blackboard/execute/modulepage/view?course_id=_101705_1&cmp_tab_id=_255685_1&editMode=true&mode=cpview" id="modulelinktop202" class="module"><img id="module202imageid" alt="Module 202" src="images/moduleLink202[white3].svg" title="module202" width="400" height="400" /> </a></li>
+<!--module 203-->
+<li style="list-style-type: none;"><div id="MOD203DIV"><a target="_blank" href="https://studentcentral.brighton.ac.uk/webapps/blackboard/execute/modulepage/view?course_id=_101706_1&cmp_tab_id=_255687_1&editMode=true&mode=cpview" id="modulelinktop203" class="module"><img id="module203imageid" alt="Module 203" src="images/moduleLink203[white2].svg" title="module203" width="400" height="400" /> </a></li>
 
-        <style>
-            /* following three (cascaded) are equivalent to above three meta viewport statements */
-            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
-            /* see http://dev.w3.org/csswg/css-device-adapt/ */
-                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
-                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
-                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
-        </style>
+<!--module 204-->
+<li style="list-style-type: none;"><div id="MOD204DIV"><a target="_blank" href="https://studentcentral.brighton.ac.uk/webapps/blackboard/execute/modulepage/view?course_id=_101707_1&cmp_tab_id=_255689_1&editMode=true&mode=cpview" id="modulelinktop204" class="module"><img id="module204imageid" alt="Module 204" src="images/moduleLink204[white2].svg" title="module204" width="400" height="400" /> </a></li>
+</ul>
+</div>
+</div>
+<!--DR Notes-->
+<div id="DRNOTESDIV" style="float: left; width: 17%; border-right: 1px dotted #ccc; padding-left: 10px; padding-right: 20px; padding-top: 10px; position: relative; height: 200px;"><a target="_blank" href="#" id="drnoteslinktop1" class="drnotes"><img id="drnotesimageid" alt="Dissection Room Notes" src="images/notes[w].svg" title="dissection room notes" width="69" height="69" /> </a>
+<div style="position: absolute; top: 80px; padding-right: 10px;">
+<h3 style="color: #bbba41; font-size: 1.3em; font-weight: 400; font-family: arial; text-align: left;"><a target="_blank" href="#" style="text-decoration: none; color: #bbba41;" id="drnoteslinktop2" title="Dissection Room Notes" class="drnotes">DR Notes</a></h3>
+<p style="text-align: left;"><a target="_blank" href="#" style="text-decoration: none; color: white; font-family: arial;" id="drnoteslinktop3" title="Dissection Room Notes" class="drnotes">Instruction notes for practical sessions.</a>
+</p>
 
-        <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+<!--DR Note1 dropdown-->
+<div id="dropdown2" style="float: left; width: 18%; margin-top: 2.3cm;"></div>
+<ul id="links2">
+<li style="list-style-type: none;"><div id="MOD205BDIV"><a target="_blank" href="images/103-Dissection Session 1to5 2015-16.pdf" id="modulelinktop205B" class="module"><img id="module205Bimageid" alt="Module 103" src="images/DRNoteLink103.svg" title="DR Notes Module 103" width="150" height="150" /> </a></li>
 
-        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
-        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
-        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+<li style="list-style-type: none;"><div id="MOD205CDIV"><a target="_blank" href="images/103-Dissection Session 1to5 2015-16.pdf" id="modulelinktop205C" class="module"><img id="module205Cimageid" alt="Module 104" src="images/DRNoteLink104.svg" title="DR Notes Module 104" width="150" height="150" /> </a></li>
 
-        <!-- Recommended location for your JavaScript libraries -->
-        <!-- These library references (below) are just examples to give you the general idea... -->
-        <!-- <script src="lib/mc/hammer.js"></script> -->
-        <!-- <script src="lib/ft/fastclick.js"></script> -->
+<li style="list-style-type: none;"><div id="MOD205DDIV"><a target="_blank" href="images/202 - DR session notes 1to5 - 2015-16.pdf" id="modulelinktop205D" class="module"><img id="module205Dimageid" alt="Module 202" src="images/DRNoteLink202.svg" title="DR Notes Module 202" width="150" height="150" /> </a></li>
 
-        <!--
-  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
-  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
-  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
-  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
--->
-        <script src="cordova.js" id="xdkJScordova_"></script>
+    <li style="list-style-type: none;"><div id="MOD205EDIV"><a target="_blank" href="images/202 - DR session notes 1to5 - 2015-16.pdf" id="modulelinktop205E" class="module"><img id="module205Eimageid" alt="Module 203" src="images/DRNoteLink203.svg" title="DR Notes Module 203" width="150" height="150" /> </a></li>
 
-        <script src="js/app.js"></script>
-        <!-- for your event code, see README and file comments for details -->
-        <script src="js/init-app.js"></script>
-        <!-- for your init code, see README and file comments for details -->
-        <script src="xdk/init-dev.js"></script>
-        <!-- normalizes device and document ready events, see file for details -->
-        <!--            
-            You may substitute jQuery for the App Framework selector library.
-            See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
-        -->
-        <script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
-        <script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
-    </head>
+    <li style="list-style-type: none;"><div id="MOD205FDIV"><a target="_blank" href="images/202 - DR session notes 1to5 - 2015-16.pdf" id="modulelinktop205F" class="module"><img id="module205Fimageid" alt="Module 204" src="images/DRNoteLink204.svg" title="DR Notes Module 203" width="150" height="150" /> </a></li>
+</ul></ul>
+</div>
+</div>
 
-    <body id="afui">
+<!--Videocasts-->
+<div id="VIDEODIV" style="float: left; width: 17%; border-right: 1px dotted #ccc; padding-left: 10px; padding-right: 20px; padding-top: 12px; position: relative; height: 200px;"><a href="#" target="_blank" id="videolink1" class="video"><img id="videoimageid" alt="" src="images/vodcasts[white].svg" title="Videocasts" width="69" height="69" /> </a>
+<div style="position: absolute; top: 80px; padding-right: 10px;">
+<h3 style="color: #bbba41; font-size: 1.3em; font-weight: 400; font-family: arial; text-align: left;"><a href="#" style="text-decoration: none; color: #bbba41;" target="_blank" id="videolink2" title="Videocasts" class="video">Videocasts</a></h3>
+<p style="text-align: left;"><a href="#" style="text-decoration: none; color: white; font-family: arial;" target="_blank" id="videolink3" title="Videocast" class="video">This section is password protected</a></p>
+<div id="dropdown3" style="margin-top: 2.5cm;"></div>
+<ul id="links3">
+<li style="list-style-type: none;"><div id="MOD206DIV"><a target="_blank" href="http://blogs.brighton.ac.uk/bsmsvideos/" id="modulelinktop206" class="module"><img id="module206imageid" alt="Module 206" src="images/vodcastsLink[white].svg" title="videocasts" width="600" height="600" /> </a></li></ul>
+</div>
+</div>
+<!--ShowMe-->
+<div id="newsDIV" style="float: left; width: 17%; border-right: 1px dotted #ccc; padding-left: 10px; padding-right: 20px; padding-top: 10px; position: relative; height: 200px;"><a href="#" target="_blank" id="newslink1" class="news"><img id="newsimageid" alt="" src="images/presention[white].svg" title="News and events" width="79" height="67" /> </a>
+<div style="position: absolute; top: 80px; padding-right: 10px;">
+<h3 style="color: #bbba41; font-size: 1.3em; font-weight: 400; font-family: arial; text-align: left;"><a href="#" style="text-decoration: none; color: #bbba41;" target="_blank" id="newslink2" title="News and events" class="news">Presentations</a></h3>
+<p style="text-align: left;"><a href="#" style="text-decoration: none; color: #fff; font-family: arial;" target="_blank" id="newslink3" title="News and events" class="news">showMe/YouTube presentations</a></p>
+<p></p>
+<!--ShowMe Presentation dropdowns-->
+<div id="dropdown4" style="margin-top: 2.5cm;"></div>
+<!--youtube Link-->
+<li style="list-style-type: none;"><div id="MOD203ADIV"><a target="_blank" href="https://www.youtube.com/watch?v=VqPNDbsUbh4" id="modulelinktop203A" class="module"><img id="module203Aimageid" alt="Module 203A" src="images/youtubeLink[white].svg" title="module203A" width="150" height="150" /> </a></li>
+<!--nearpod Link-->
+<li style="list-style-type: none;"><div id="MOD204ADIV"><a target="_blank" href="https://www.nearpod.com" id="modulelinktop204A" class="module"><img id="module204Aimageid" alt="Module 2034" src="images/NearpodLink.svg" title="module204A" width="150" height="150" /> </a></li></ul>
+</ul>
 
-        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
-        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
-        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
-        <header class="wrapping-col wrap-element uib_w_1" data-uib="app_framework/header" data-ver="2" id="af-header-0">
-            <h1>Title</h1>
-        </header>
-        <div id="content" class="uwrap">
-            <div class="upage vertical-col panel" id="mainpage" data-header="af-header-0" data-footer="none">
-                <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
-                    <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
-                        <div class="widget-container content-area vertical-col">
+</div>
+</div>
 
-                            <div class="widget uib_w_2 d-margins" data-uib="media/text" data-ver="0">
-                                <div class="widget-container left-receptacle"></div>
-                                <div class="widget-container right-receptacle"></div>
-                                <div>
-                                    <p>This is a Single View App Template.</p>
-                                </div>
-                            </div><span class="uib_shim"></span>
-                        </div>
-                    </div>
-                    <span class="uib_shim"></span>
-                </div>
-            </div>
-        </div>
-    </body>
+<!--Anatomy Librarys-->
+<div id="cardDIV" style="float: left; width: 17%; border-right: none; padding-left: 10px; padding-right: 20px; padding-top: 10px; position: relative; height: 200px;"><a href="#" target="_blank" id="cardlink2" class="card"><img id="cardimageid" alt="" src="images/media2[white].svg" title="Image Banks" width="82" height="67" /> </a>
+<div style="position: absolute; top: 80px; padding-right: 10px;">
+<h3 style="color: #bbba41; font-size: 1.3em; font-weight: 400; font-family: arial; text-align: left;"><a href="#" style="text-decoration: none; color: #bbba41;" target="_blank" id="cardlink2" title="Image Banks" class="card">Image Banks</a></h3>
+<p style="text-align: left;"><a href="#" style="text-decoration: none; color: white; font-family: arial;" target="_blank" id="cardlink3" title="Image Banks" class="card">Access to Primal Pictures and Acland anatomy</a></p>
+<p></p>
+<p></p>
+<!--image bank libarys-->
+<div id="dropdown5" style="margin-top: 2.5cm;"></div>
 
+<!--Acland anatomy-->
+<ul id="links5">
+<li style="list-style-type: none;"><div id="ACLANADIV"><a target="_blank" href="http://aclandanatomy.com" id="ACLANAlinktop" class="module"><img id="ACLANAimageid" alt="Acland anatomy" src="images/aclandLink[white].svg" title="Acland anatomy" width="200" height="200" /> </a></li>
+<p></p>
+<!-- Primal Pictures-->
+<li style="list-style-type: none;"><div id="PRMPICSDIV"><a target="_blank" href="https://primalpictures.com" id="PRMPICSlinktop" class="module"><img id="PRMPICSimageid" alt=" Primal Pictures" src="images/primalLink[white].svg" title=" Primal Pictures" width="200" height="200" /> </a></li>
+</ul></ul>
+</div>
+</div>
+</div>
+<!--Title-->
+<div id="anatomytitle" style="float: right; width: 55%; border-right: none; padding-left: 30px; padding-right: 20px; margin-top:300px; position: relative; height: 200px;"><a href="#" target="_blank" id="anatomytitle" class="img"><img id="anatomytitleimageid" alt="" src="images/AnatomyTitle.svg" title="Image Banks" width="600" height="600" /></a></div>
+
+<!--Nearpod
+<div id="NEARPOD" style="float: right; width: 64%; border-right: none; padding-left: 50px; padding-right: 20px; margin-top:50px; position: relative; height: 100px;"><a href="#" target="_blank" id="nearpod" class="img"><img id="nearpodimageid" alt="" src="images/nearpod_logo_home.svg" title="Nearpod" width="100" height="100" /></a></div>-->
+</div>
+
+</div>
+
+</body>
 </html>
